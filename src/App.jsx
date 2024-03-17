@@ -1,7 +1,5 @@
 import './app.css'
-
 import { useState } from 'react'
-
 
 function App() {
 
@@ -56,20 +54,18 @@ function App() {
         )}
       </div>
 
-        {user && (
-          <div className='flex-container'>
-            <img src={user.results[0].picture.large} alt="Profile picture" />
-            <div id='info'>
-              <p id='profile-name'>{[user.results[0].name.first,' ', user.results[0].name.last]}</p>
-              <p><b>Adress: </b>{[user.results[0].location.street.name, ', ', user.results[0].location.street.number]}</p>
-              <p><b>Stad: </b>{[user.results[0].location.city, ', ', user.results[0].location.country]}</p>
-              <p><b>Email: </b>{user.results[0].email}</p>
-              <p><b>Mobilnummer: </b>{user.results[0].cell}</p>
-            </div>
+      {user && (
+        <div className='flex-container'>
+          <img src={user.results[0].picture.large} alt="Profile picture" />
+          <div id='info'>
+            <p id='profile-name'>{[user.results[0].name.first,' ', user.results[0].name.last]}</p>
+            <p><b>Adress: </b>{[user.results[0].location.street.name, ', ', user.results[0].location.street.number]}</p>
+            <p><b>Stad: </b>{[user.results[0].location.city, ', ', user.results[0].location.country]}</p>
+            <p><b>Email: </b>{user.results[0].email}</p>
+            <p><b>Mobilnummer: </b>{user.results[0].cell}</p>
           </div>
-        )}
-
-
+        </div>
+       )}
     </>
   )
 }
