@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+}
+
+img {
+  border: 2px solid black;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  text-align: center;
+  margin: 2rem;
+}
+
+#info {
+  padding-left: 5px;
+
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #4CAF50;
+  color: #fff;
+  background-color: #4CAF50;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin: 0.5rem;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+#profile-name {
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-weight: 300;
+  text-align: center;
+  margin-top: 1rem;
+}
